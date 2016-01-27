@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <meta charset="UTF-8" /> -->
+  
+	<!--    <meta http-equiv="Content-Type" 
+            content="text/html; charset=iso-2022-jp"> --> 
+            
+   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+
+  <title>Mergerick Co.LTD.</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="./fabric.min.js"></script>
+  <script src="./main.js"></script>
+  
+  <link href="./main.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- ■　header について　-->
+ 
+<body>
+  <header>
+    <h1>Mergerick Co.LTD. - Banner Generator</h1>
+  </header>
+<!-- -->
+
+  <p>【バナー文言】【色】</p>
+
+  <div class="section">
+    <textarea id="text">バナー [1]</textarea>
+    <input type="color" value="#000000" id="stroke-color">
+    <input type="color" value="#ffffff" id="fill-color">
+
+    <textarea id="text2">バナー [2] </textarea>
+      <input type="color" value="#000000" id="stroke-color2">
+    <input type="color" value="#ffffff" id="fill-color2">
+
+    <textarea id="text3">バナー [3]</textarea>
+    <input type="color" value="#000000" id="stroke-color3">
+    <input type="color" value="#ffffff" id="fill-color3">
+
+  </div>
+  
+  <!-- 
+  <div class="section">
+    <textarea id="text2">バナーに入れたい文言　?A </textarea>
+  </div>
+  
+  <div class="section">
+    <textarea id="text3">バナーに入れたい文言　?B </textarea>
+  </div>
+  --> 
+  
+
+  
+<!--■　 【フォントタイプ】 --> 
+　<p>【フォントタイプ】</p>
+  <!-- <div class="section">
+    <input type="color" value="#000000" id="stroke-color">
+    <input type="color" value="#ffffff" id="fill-color">
+  </div>
+
+ <div class="section">
+    <input type="color" value="#000000" id="stroke-color2">
+    <input type="color" value="#ffffff" id="fill-color2">
+  </div>
+
+  <div class="section">
+    <input type="color" value="#000000" id="stroke-color3">
+    <input type="color" value="#ffffff" id="fill-color3">
+  </div> -->
+
+  <div class="section">
+    <select id="font-families">    
+      <option value="Georgia">Georgia  </option>
+      <option value="Palatino">Palatino Linotype  </option>
+      <option value="Book">Book Antiqua  </option>
+      <option value="Helvetica">Helvetica  </option>
+      <option value="Black">Arial Black  </option>
+      <option value="Lucida">Lucida Sans Unicode  </option>
+      <option value="Tahoma">Tahoma  </option>
+      <option value="Courier">Courier New  </option>
+      <option value="LucidaC">Lucida Console】</option>
+      <option value="Arial">Arial</option>
+  	  <option value="Times">Times New Roman</option>
+  	  <option value="Impact">Impact</option>
+  	  <option value="Courier">Courier</option>
+  	  <option value="Century">Century Gothic</option>
+      <option value="Gulim">Gulim</option>
+      <option value="Dotum">Dotum</option>
+      <option value="Impact" selected>Impact</option>
+      <option value="Verdana">Verdana</option>
+      <option value="serif">serif</option>
+      <option value="Batang">Batang</option>
+      <option value="Roman">Roman</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Tunga">Tunga</option>
+      <option value="monospace">monospace</option>
+    </select>
+    <input type="text" id="font-family" value="Impact">
+  </div>
+
+  <div class="section">
+    <select id="font-families2">
+      <option value="Georgia">Georgia  </option>
+      <option value="Palatino">Palatino Linotype  </option>
+      <option value="Book">Book Antiqua  </option>
+      <option value="Helvetica">Helvetica  </option>
+      <option value="Black">Arial Black  </option>
+      <option value="Lucida">Lucida Sans Unicode  </option>
+      <option value="Tahoma">Tahoma  </option>
+      <option value="Courier">Courier New  </option>
+      <option value="LucidaC">Lucida Console】</option>
+      <option value="Arial">Arial</option>
+  	  <option value="Times">Times New Roman</option>
+  	  <option value="Impact">Impact</option>
+  	  <option value="Courier">Courier</option>
+  	  <option value="Century">Century Gothic</option>
+      <option value="Gulim">Gulim</option>
+      <option value="Dotum">Dotum</option>
+      <option value="Impact" selected>Impact</option>
+      <option value="Verdana">Verdana</option>
+      <option value="serif">serif</option>
+      <option value="Batang">Batang</option>
+      <option value="Roman">Roman</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Tunga">Tunga</option>
+      <option value="monospace">monospace</option>
+    </select>
+    <input type="text" id="font-family2" value="Impact">
+  </div>
+
+<div class="section">
+    <select id="font-families3">
+      <option value="Georgia">Georgia  </option>
+      <option value="Palatino">Palatino Linotype  </option>
+      <option value="Book">Book Antiqua  </option>
+      <option value="Helvetica">Helvetica  </option>
+      <option value="Black">Arial Black  </option>
+      <option value="Lucida">Lucida Sans Unicode  </option>
+      <option value="Tahoma">Tahoma  </option>
+      <option value="Courier">Courier New  </option>
+      <option value="LucidaC">Lucida Console】</option>
+      <option value="Arial">Arial</option>
+  	  <option value="Times">Times New Roman</option>
+  	  <option value="Impact">Impact</option>
+  	  <option value="Courier">Courier</option>
+  	  <option value="Century">Century Gothic</option>
+      <option value="Gulim">Gulim</option>
+      <option value="Dotum">Dotum</option>
+      <option value="Impact" selected>Impact</option>
+      <option value="Verdana">Verdana</option>
+      <option value="serif">serif</option>
+      <option value="Batang">Batang</option>
+      <option value="Roman">Roman</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Tunga">Tunga</option>
+      <option value="monospace">monospace</option>
+    </select>
+    <input type="text" id="font-family3" value="Impact">
+  </div>
+
+
+
+
+  <div class="section">
+    <label for="bold"><input type="checkbox" id="bold"> <b>bold</b></label>
+    <label for="italic"><input type="checkbox" id="italic"> <i>italic</i></label>
+  </div>
+
+  <!-- ■■■■■ バナーサイズ・-->
+ <p>【バナーサイズ・Standard Web Banners】
+  <div class="section">
+      <select id="font-families-4">
+      <option value="00">468 x 060【Full Banner】</option>	　
+      <option value="01">728 x 090【Leaderboard】</option>	　
+      <option value="02">336 x 280【Square】</option>
+      <option value="03">300 x 250【Square】</option>			　
+      <option value="04">250 x 250【Square】</option>
+      <option value="05">160 x 600【Skyscraper】</option>		　
+      <option value="06">120 x 600【Skyscraper】</option>		　
+      <option value="07">120 x 240【Small Skyscraper】</option>　
+      <option value="08">240 x 400【Fat Skyscraper】</option>	　
+      <option value="09">234 x 060【Half Banner】</option>		　
+      <option value="10">180 x 150【Rectangle】</option>	　
+      <option value="11">125 x 125【Square Button】</option>	　
+      <option value="12">120 x 090【Button】</option>		　
+      <option value="13">120 x 060【Button】</option>			　
+      <option value="14">088 x 031【Button】</option>			　
+    </select>　
+   <input type="text" id="font-family-4" value="Impact">
+  </p>
+
+  <!-- ■■■■■ バナーサイズ・-->
+ <p>【バナーサイズ・Common, But Not Standard Banner Sizes】</p>
+  <div class="section">
+      <select id="font-families-5">
+      <option value="10">120 x 030【Button】</option>			　
+      <option value="11">230 x 033【Small Banner】</option>
+      <option value="12">728 x 210【Large Leaderboard</option>		　
+      <option value="13">720 x 300【Large Leaderboard】</option>		　
+      <option value="14">500 x 350【Pop-up】</option>　
+      <option value="15">550 x 480【Pop-up】</option>	　
+      <option value="16">300 x 600【Half Page Banner】</option>		　
+      <option value="17">940 x 015【Blog Button】</option>
+    </select>
+  </div>
+
+　<p>【ロカルでダウンロード】</p>
+  <div class="section5">
+    <a href="/images/myw3schoolsimage.jpg" id="download" target="_blank">ダウンロード</a>
+  </div>
+<!--■■■■■■■■■■■■■■ 【マイン画像】  --> 
+　<p>【マイン画像】</p>
+  <div class="section">
+    <input type="file">
+  </div>
+
+  <div class="section">
+    <div class="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- <footer>
+    <a href="http://fabricjs.com/" target="_blank">Fabric.js</a>
+  </footer> --> 
+  
+</body>
+</html>
